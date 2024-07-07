@@ -1,0 +1,62 @@
+/* app.component.css */
+#wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    
+    
+  }
+  
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    background-color: #4a4a77;
+    transition: margin 0.25s ease-out;
+    
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    background-color: #4a4a77;
+    border: 1px solid white;
+    font-size: 16px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+   
+  }
+  a{
+    
+    color: white;
+    background-color: #4a4a77;
+    cursor: pointer;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+    font-size: 12px;
+    background-color: #4a4a77;
+    margin-top: 50px;
+  }
+  .list-group{
+    background-color: #4a4a77;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  

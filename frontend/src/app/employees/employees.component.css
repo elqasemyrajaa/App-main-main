@@ -1,0 +1,29 @@
+h2{
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #4a4a77;
+}
+tr,a{
+  font-size: 10px;
+  color: white;
+  background-color: #4a4a77;
+}
+table{
+  font-size: 13px;
+  color:#4a4a77;
+}
+table tr{
+  font-size: 10px; 
+}
+h5{
+  font-size: 13px;
+}
+.modal-footer,button{
+  font-size: 10px;
+}
+td,button{
+  font-size: 10px;
+}
+input,label{
+  font-size: 10px;
+}

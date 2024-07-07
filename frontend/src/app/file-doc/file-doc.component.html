@@ -1,0 +1,50 @@
+<!-- info-display.component.html
+<div class="container mt-5">
+    <div id="pdfContent" class="card">
+      <div class="card-header">
+        User Informations
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          <strong>Matricule : </strong>{{file.id_emp}}<br>
+          <strong>Post : </strong>{{file.id_post}}<br>
+          <strong>Base Salary : </strong>{{file.baseSalary}}<br>
+          <strong>Variable prime : </strong>{{file.primeSalary}}<br>
+          <strong>Transport  : </strong>500<br>
+          <strong>Panier : </strong>500<br>
+          <strong>Salary global :  </strong>{{file.montant}}
+        </p>
+      </div>
+      <button  class="btn btn-light" (click)="generatePDF()">Imprimer</button>
+    </div>
+  </div> -->
+  
+  <div class="container mt-5">
+    <h2>Print Payment Paper</h2>
+    <button class="btn btn-success mb-3" (click)="printTable()"><i class="bi bi-printer"></i></button>
+    <div id="print-section">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Matricule </th>
+            <th>Post </th>
+            <th>Base Salary </th>
+            <th>Variable prime  </th>
+            <th>Transport   </th>
+            <th>Salary global  </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr >
+            <td>{{file.id_emp}}</td>
+            <td>{{ file.id_post }}</td>
+            <td>{{file.baseSalary}}</td>
+            <td>{{file.primeSalary}}</td>
+            <td>500</td>
+            <td>{{file.montant}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
